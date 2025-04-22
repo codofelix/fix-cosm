@@ -6,6 +6,8 @@
     font-size: 2em;
     cursor: pointer;
     gap: 5px;
+    color: #333;
+    z-index: 1002;
   }
   
   .menu-toggle span {
@@ -17,7 +19,11 @@
   
   /* Responsive */
   @media (max-width: 768px) {
-    .menu-toggle { display: block;
+    .menu-toggle { 
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: 25px;
     }
   
     .nav-links {
