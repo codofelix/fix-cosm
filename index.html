@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIX COSMO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <header>
+    <div class="logo">FIX COSMO</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#produits">Produits</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle"> <span></span><span></span><span></span></div>
+    </nav>
+  </header>
+
+  <section id="accueil" class="hero">
+    <div class="hero-content fade-in">
+      <h1>Votre beauté, notre stratégie</h1>
+      <p>Spécialistes en marketing cosmétique</p>
+      <a href="#services" class="btn">Découvrir nos services</a>
+    </div>
+  </section>
+
+  <section id="apropos" class="apropos">
+    <div class="apropos-content fade-in">
+      <div class="text">
+        <h2>À propos de FIX COSMO</h2>
+        <p>
+          FIX COSMO est une agence de marketing passionnée par la beauté. 
+          Nous accompagnons les marques de cosmétiques dans la création de campagnes innovantes et efficaces, 
+          en mettant en valeur leurs produits avec style et stratégie.
+        </p>
+        <p>
+          Notre équipe de professionnels fusionne créativité, expertise digitale et connaissance du marché beauté 
+          pour garantir des résultats concrets et une image de marque forte.
+        </p>
+      </div>
+      <div class="image">
+        <img src="images/backgr.jpg" alt="FIX COSMO équipe">
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <div class="services-container">
+      <div class="service-box fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/3534/3534067.png" alt="Marketing Digital">
+        <h3>Marketing Digital</h3>
+        <p>Stratégies innovantes pour augmenter la visibilité de vos produits cosmétiques.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/9068/9068773.png" alt="Publicité Ciblée">
+        <h3>Publicité Ciblée</h3>
+        <p>Campagnes sur-mesure pour toucher votre audience idéale.</p>
+      </div>
+      <div class="service-box fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/2721/2721296.png" alt="Branding Produit">
+        <h3>Branding Produit</h3>
+        <p>Création d’une image de marque forte et mémorable.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produits" class="produits">
+    <h2>Nos Produits</h2>
+    <div class="produits-gallery">
+      <div class="produit-card fade-in">
+        <img src="images/soins visage.jpg" alt="Soin du visage">
+        <div class="overlay">
+          <h3>Soin du visage</h3>
+        </div>
+      </div>
+      <div class="produit-card fade-in">
+        <img src="images/maquillage.jpg" alt="Maquillage">
+        <div class="overlay">
+          <h3>Maquillage</h3>
+        </div>
+      </div>
+      <div class="produit-card fade-in">
+        <img src="images/soins capillaires.jpg" alt="Soins capillaires">
+        <div class="overlay">
+          <h3>Soins capillaires</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="temoignages" class="temoignages">
+    <h2>Ce que disent nos clients</h2>
+    <div class="carousel fade-in">
+      <div class="carousel-inner">
+        <div class="testimonial">
+          <p>"FIX COSMO a boosté notre visibilité sur Instagram. Résultats visibles dès le premier mois !"</p>
+          <h4>– Amélie, fondatrice de GlowCare</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Professionnels, créatifs et efficaces. Je recommande à 100% pour les marques de cosmétiques."</p>
+          <h4>– Sarah, directrice marketing chez BelleAura</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Grâce à FIX COSMO, nos campagnes de lancement ont été un vrai succès. Merci pour votre accompagnement."</p>
+          <h4>– Marc, CEO de PureSkin</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <div class="contact-container fade-in">
+      <form action="mailto:contact@fixcosmo.com" method="POST" enctype="text/plain">
+        <input type="text" name="Nom" placeholder="Votre nom" required>
+        <input type="email" name="Email" placeholder="Votre email" required>
+        <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+  
+      <div class="contact-info">
+        <p>Email : fixcosmo@gmail.com</p>
+        <p>Téléphone : +33 6 12 34 56 78</p>
+        <div class="socials">
+          <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    const faders = document.querySelectorAll('.fade-in');
+  
+    const appearOptions = {
+      threshold: 0.5,
+      rootMargin: "0px 0px -50px 0px"
+    };
+  
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+  
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+
+<script>
+  let index = 0;
+  const carousel = document.querySelector('.carousel-inner');
+  const totalSlides = document.querySelectorAll('.testimonial').length;
+
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }, 5000);
+</script>
+
+<script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+  
