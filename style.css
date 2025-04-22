@@ -3,7 +3,7 @@
 /* Hamburger icon */
 .menu-toggle {
     display: none;
-    flex-direction: column;
+    font-size: 2em;
     cursor: pointer;
     gap: 5px;
   }
@@ -17,8 +17,7 @@
   
   /* Responsive */
   @media (max-width: 768px) {
-    nav {
-      position: relative;
+    .menu-toggle { display: block;
     }
   
     .nav-links {
