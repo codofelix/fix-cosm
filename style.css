@@ -31,9 +31,9 @@
       top: 60px;
       right: 0;
       background: white;
-      width: 100%;
+      width:auto;
       flex-direction: column;
-      align-items: center;
+      align-items:flex-end;
       display: none;
       gap: 20px;
       padding: 20px 0;
